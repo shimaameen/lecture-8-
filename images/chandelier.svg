@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><radialGradient id="g" cx="50%" cy="40%" r="55%"><stop offset="0" stop-color="#ffd27a" stop-opacity=".85"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b3b46"/><stop offset="1" stop-color="#0f2a33"/></linearGradient></defs><rect width="400" height="400" fill="url(#b)"/><rect width="400" height="400" fill="url(#g)"/><line x1="200" y1="0" x2="200" y2="110" stroke="#e9eef0" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M80 200 Q200 120 320 200 M120 250 Q200 190 280 250" stroke="#e9eef0" stroke-width="4" fill="none" stroke-linecap="round"/><line x1="200" y1="110" x2="200" y2="270" stroke="#e9eef0" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="80" cy="200" r="14" fill="#ffd27a"/><line x1="80" y1="214" x2="80" y2="260" stroke="#e9eef0" stroke-width="3"/><circle cx="140" cy="165" r="14" fill="#ffd27a"/><line x1="140" y1="179" x2="140" y2="225" stroke="#e9eef0" stroke-width="3"/><circle cx="200" cy="150" r="14" fill="#ffd27a"/><line x1="200" y1="164" x2="200" y2="210" stroke="#e9eef0" stroke-width="3"/><circle cx="260" cy="165" r="14" fill="#ffd27a"/><line x1="260" y1="179" x2="260" y2="225" stroke="#e9eef0" stroke-width="3"/><circle cx="320" cy="200" r="14" fill="#ffd27a"/><line x1="320" y1="214" x2="320" y2="260" stroke="#e9eef0" stroke-width="3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a3744"/>
+      <stop offset="1" stop-color="#0f2129"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eaf2f5"/>
+      <stop offset="0.5" stop-color="#b7c9cd"/>
+      <stop offset="1" stop-color="#eaf2f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="120" r="70" fill="#ffdd9a" opacity="0.18"/>
+  <line x1="200" y1="38" x2="200" y2="110" stroke="url(#metal)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 190 Q200 110 310 190" fill="none" stroke="url(#metal)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 230 Q200 175 280 230" fill="none" stroke="url(#metal)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="188" x2="90" y2="265" stroke="url(#metal)" stroke-width="4"/>
+  <line x1="140" y1="155" x2="140" y2="240" stroke="url(#metal)" stroke-width="4"/>
+  <line x1="200" y1="138" x2="200" y2="250" stroke="url(#metal)" stroke-width="4"/>
+  <line x1="260" y1="155" x2="260" y2="240" stroke="url(#metal)" stroke-width="4"/>
+  <line x1="310" y1="188" x2="310" y2="265" stroke="url(#metal)" stroke-width="4"/>
+  <circle cx="90" cy="190" r="15" fill="#ffd27a"/>
+  <circle cx="140" cy="155" r="15" fill="#ffd27a"/>
+  <circle cx="200" cy="138" r="15" fill="#ffd27a"/>
+  <circle cx="260" cy="155" r="15" fill="#ffd27a"/>
+  <circle cx="310" cy="190" r="15" fill="#ffd27a"/>
+  <path d="M90 265 L310 265" stroke="url(#metal)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 265 L120 300 M200 250 L200 300 M280 265 L280 300" stroke="url(#metal)" stroke-width="4" stroke-linecap="round"/>
+</svg>

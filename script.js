@@ -21,7 +21,48 @@ chips.forEach(chip => chip.addEventListener('click', () => {
   });
 }));
 
-// 3) حرارة اللون
+// 3) تفاصيل المنتج
+const modal = document.getElementById('productModal');
+const modalImage = document.getElementById('modalImage');
+const modalCategory = document.getElementById('modalCategory');
+const modalTitle = document.getElementById('modalTitle');
+const modalDescription = document.getElementById('modalDescription');
+const modalSpecs = document.getElementById('modalSpecs');
+const detailButtons = document.querySelectorAll('.detail-btn');
+const closeModalButton = document.querySelector('.close-modal');
+
+function openProductModal(button) {
+  const specs = (button.dataset.specs || '').split('|').filter(Boolean);
+  modalImage.src = button.dataset.image;
+  modalImage.alt = button.dataset.title;
+  modalCategory.textContent = button.dataset.category;
+  modalTitle.textContent = button.dataset.title;
+  modalDescription.textContent = button.dataset.description;
+  modalSpecs.innerHTML = '';
+  specs.forEach(spec => {
+    const item = document.createElement('li');
+    item.textContent = spec;
+    modalSpecs.appendChild(item);
+  });
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+}
+
+function closeProductModal() {
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+detailButtons.forEach(button => button.addEventListener('click', () => openProductModal(button)));
+closeModalButton.addEventListener('click', closeProductModal);
+modal.addEventListener('click', (event) => {
+  if (event.target.matches('[data-close="true"]')) closeProductModal();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && modal.classList.contains('open')) closeProductModal();
+});
+
+// 4) حرارة اللون
 const temp = document.getElementById('temp');
 const room = document.getElementById('room');
 const label = document.getElementById('tempLabel');
